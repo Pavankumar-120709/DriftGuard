@@ -1,0 +1,2985 @@
+{
+  "champion_version": "logistic_regression-v1794858906",
+  "previous_champion_version": "logistic_regression-v1794858903",
+  "models": {
+    "logistic_regression-v1794858045": {
+      "version": "logistic_regression-v1794858045",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858045\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7465,
+        "val_precision": 0.5155,
+        "val_recall": 0.7687,
+        "val_f1": 0.6171,
+        "val_roc_auc": 0.8364,
+        "val_pr_auc": 0.6388,
+        "val_brier_score": 0.165,
+        "val_true_negatives": 573,
+        "val_false_positives": 203,
+        "val_false_negatives": 65,
+        "val_true_positives": 216,
+        "val_estimated_net_benefit_usd": 273720.0,
+        "test_accuracy": 0.7521,
+        "test_precision": 0.5202,
+        "test_recall": 0.8286,
+        "test_f1": 0.6391,
+        "test_roc_auc": 0.8593,
+        "test_pr_auc": 0.6843,
+        "test_brier_score": 0.1606,
+        "test_true_negatives": 563,
+        "test_false_positives": 214,
+        "test_false_negatives": 48,
+        "test_true_positives": 232,
+        "test_estimated_net_benefit_usd": 294480.0,
+        "training_duration_seconds": 0.37
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0996,
+          "raw_score": 0.9154
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0938,
+          "raw_score": 0.8623
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0668,
+          "raw_score": 0.6143
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0599,
+          "raw_score": 0.5501
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0412,
+          "raw_score": 0.3787
+        },
+        {
+          "feature": "has_tech_or_security_Yes",
+          "importance": 0.0264,
+          "raw_score": 0.2425
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0263,
+          "raw_score": 0.2419
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0252,
+          "raw_score": 0.2312
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0245,
+          "raw_score": 0.2248
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0245,
+          "raw_score": 0.2248
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0241,
+          "raw_score": 0.2214
+        },
+        {
+          "feature": "InternetService_No",
+          "importance": 0.021,
+          "raw_score": 0.1927
+        },
+        {
+          "feature": "OnlineSecurity_No internet service",
+          "importance": 0.021,
+          "raw_score": 0.1927
+        },
+        {
+          "feature": "OnlineBackup_No internet service",
+          "importance": 0.021,
+          "raw_score": 0.1927
+        },
+        {
+          "feature": "DeviceProtection_No internet service",
+          "importance": 0.021,
+          "raw_score": 0.1927
+        }
+      ],
+      "mlflow_run_id": "0b3334a98b3143f1b148644d3327c07a",
+      "dataset_fingerprint": "b8f1f849c590b8d9",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858045": {
+      "version": "random_forest-v1794858045",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858045\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7559,
+        "val_precision": 0.5288,
+        "val_recall": 0.7509,
+        "val_f1": 0.6206,
+        "val_roc_auc": 0.8364,
+        "val_pr_auc": 0.6303,
+        "val_brier_score": 0.1601,
+        "val_true_negatives": 588,
+        "val_false_positives": 188,
+        "val_false_negatives": 70,
+        "val_true_positives": 211,
+        "val_estimated_net_benefit_usd": 268620.0,
+        "test_accuracy": 0.7597,
+        "test_precision": 0.531,
+        "test_recall": 0.7964,
+        "test_f1": 0.6371,
+        "test_roc_auc": 0.8492,
+        "test_pr_auc": 0.6604,
+        "test_brier_score": 0.1584,
+        "test_true_negatives": 580,
+        "test_false_positives": 197,
+        "test_false_negatives": 57,
+        "test_true_positives": 223,
+        "test_estimated_net_benefit_usd": 284100.0,
+        "training_duration_seconds": 1.42
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.14,
+          "raw_score": 0.14
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0836,
+          "raw_score": 0.0836
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.071,
+          "raw_score": 0.071
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0636,
+          "raw_score": 0.0636
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0614,
+          "raw_score": 0.0614
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0587,
+          "raw_score": 0.0587
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0555,
+          "raw_score": 0.0555
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.054,
+          "raw_score": 0.054
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0514,
+          "raw_score": 0.0514
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0479,
+          "raw_score": 0.0479
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.031,
+          "raw_score": 0.031
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.0244,
+          "raw_score": 0.0244
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0179,
+          "raw_score": 0.0179
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0145,
+          "raw_score": 0.0145
+        },
+        {
+          "feature": "OnlineBackup_No",
+          "importance": 0.0144,
+          "raw_score": 0.0144
+        }
+      ],
+      "mlflow_run_id": "2325ed7f318746249f5e51c630f8f87c",
+      "dataset_fingerprint": "b8f1f849c590b8d9",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858045": {
+      "version": "xgboost-v1794858045",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858045\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7588,
+        "val_precision": 0.5323,
+        "val_recall": 0.7616,
+        "val_f1": 0.6266,
+        "val_roc_auc": 0.8378,
+        "val_pr_auc": 0.6451,
+        "val_brier_score": 0.1606,
+        "val_true_negatives": 588,
+        "val_false_positives": 188,
+        "val_false_negatives": 67,
+        "val_true_positives": 214,
+        "val_estimated_net_benefit_usd": 272760.0,
+        "test_accuracy": 0.755,
+        "test_precision": 0.5251,
+        "test_recall": 0.7857,
+        "test_f1": 0.6295,
+        "test_roc_auc": 0.8512,
+        "test_pr_auc": 0.6621,
+        "test_brier_score": 0.158,
+        "test_true_negatives": 578,
+        "test_false_positives": 199,
+        "test_false_negatives": 60,
+        "test_true_positives": 220,
+        "test_estimated_net_benefit_usd": 279720.0,
+        "training_duration_seconds": 1.09
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 2.77,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.287,
+          "raw_score": 0.287
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.2579,
+          "raw_score": 0.2579
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0595,
+          "raw_score": 0.0595
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0428,
+          "raw_score": 0.0428
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0252,
+          "raw_score": 0.0252
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.0241,
+          "raw_score": 0.0241
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.019,
+          "raw_score": 0.019
+        },
+        {
+          "feature": "StreamingMovies_Yes",
+          "importance": 0.014,
+          "raw_score": 0.014
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0129,
+          "raw_score": 0.0129
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0125,
+          "raw_score": 0.0125
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0121,
+          "raw_score": 0.0121
+        },
+        {
+          "feature": "PhoneService_Yes",
+          "importance": 0.0117,
+          "raw_score": 0.0117
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0101,
+          "raw_score": 0.0101
+        },
+        {
+          "feature": "PaperlessBilling_Yes",
+          "importance": 0.01,
+          "raw_score": 0.01
+        },
+        {
+          "feature": "OnlineBackup_No",
+          "importance": 0.0096,
+          "raw_score": 0.0096
+        }
+      ],
+      "mlflow_run_id": "72e90453dbdc42ce9e897680edfb2155",
+      "dataset_fingerprint": "b8f1f849c590b8d9",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "weak-challenger-v1": {
+      "version": "weak-challenger-v1",
+      "model_name": "Weak_Model",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\weak-challenger-v1\\pipeline.joblib",
+      "metrics": {
+        "val_roc_auc": 0.65,
+        "val_f1": 0.35
+      },
+      "params": {},
+      "feature_importance": [],
+      "mlflow_run_id": null,
+      "dataset_fingerprint": null,
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858181": {
+      "version": "logistic_regression-v1794858181",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858181\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.75,
+        "val_f1": 0.6,
+        "val_roc_auc": 0.8571,
+        "val_pr_auc": 0.6244,
+        "val_brier_score": 0.148,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 1,
+        "val_true_positives": 3,
+        "val_estimated_net_benefit_usd": 3780.0,
+        "test_accuracy": 0.7222,
+        "test_precision": 0.25,
+        "test_recall": 0.3333,
+        "test_f1": 0.2857,
+        "test_roc_auc": 0.6222,
+        "test_pr_auc": 0.215,
+        "test_brier_score": 0.2024,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 2,
+        "test_true_positives": 1,
+        "test_estimated_net_benefit_usd": 1020.0,
+        "training_duration_seconds": 0.29
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0728,
+          "raw_score": 0.8658
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0683,
+          "raw_score": 0.8123
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0465,
+          "raw_score": 0.5526
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0465,
+          "raw_score": 0.5526
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0448,
+          "raw_score": 0.5328
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.039,
+          "raw_score": 0.4636
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0371,
+          "raw_score": 0.4406
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0344,
+          "raw_score": 0.4093
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0319,
+          "raw_score": 0.3789
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0303,
+          "raw_score": 0.3597
+        },
+        {
+          "feature": "PhoneService_Yes",
+          "importance": 0.0263,
+          "raw_score": 0.3132
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0263,
+          "raw_score": 0.3132
+        },
+        {
+          "feature": "MultipleLines_No phone service",
+          "importance": 0.0263,
+          "raw_score": 0.3132
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0258,
+          "raw_score": 0.3069
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0258,
+          "raw_score": 0.3068
+        }
+      ],
+      "mlflow_run_id": "1ac70e81ec92481db8330686a0e29800",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858181": {
+      "version": "random_forest-v1794858181",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858181\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7222,
+        "val_precision": 0.4,
+        "val_recall": 0.5,
+        "val_f1": 0.4444,
+        "val_roc_auc": 0.8214,
+        "val_pr_auc": 0.4233,
+        "val_brier_score": 0.1526,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2400.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.6667,
+        "test_pr_auc": 0.222,
+        "test_brier_score": 0.1811,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 1.0
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1288,
+          "raw_score": 0.1288
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.1261,
+          "raw_score": 0.1261
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.1192,
+          "raw_score": 0.1192
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0899,
+          "raw_score": 0.0899
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0548,
+          "raw_score": 0.0548
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0535,
+          "raw_score": 0.0535
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0501,
+          "raw_score": 0.0501
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0434,
+          "raw_score": 0.0434
+        },
+        {
+          "feature": "PaymentMethod_Bank transfer (automatic)",
+          "importance": 0.0242,
+          "raw_score": 0.0242
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0219,
+          "raw_score": 0.0219
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0171,
+          "raw_score": 0.0171
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0144,
+          "raw_score": 0.0144
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0127,
+          "raw_score": 0.0127
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0124,
+          "raw_score": 0.0124
+        },
+        {
+          "feature": "MultipleLines_Yes",
+          "importance": 0.0119,
+          "raw_score": 0.0119
+        }
+      ],
+      "mlflow_run_id": "de4e890dfbda4d16846d28d6e9d3c1da",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858181": {
+      "version": "xgboost-v1794858181",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858181\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.5,
+        "val_f1": 0.5,
+        "val_roc_auc": 0.8393,
+        "val_pr_auc": 0.5941,
+        "val_brier_score": 0.1414,
+        "val_true_negatives": 12,
+        "val_false_positives": 2,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2520.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.5778,
+        "test_pr_auc": 0.1763,
+        "test_brier_score": 0.2143,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.73
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 4.25,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1167,
+          "raw_score": 0.1167
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0804,
+          "raw_score": 0.0804
+        },
+        {
+          "feature": "SeniorCitizen_0",
+          "importance": 0.0532,
+          "raw_score": 0.0532
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0439,
+          "raw_score": 0.0439
+        },
+        {
+          "feature": "SeniorCitizen_1",
+          "importance": 0.0384,
+          "raw_score": 0.0384
+        },
+        {
+          "feature": "PaperlessBilling_Yes",
+          "importance": 0.0373,
+          "raw_score": 0.0373
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0358,
+          "raw_score": 0.0358
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0337,
+          "raw_score": 0.0337
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0326,
+          "raw_score": 0.0326
+        },
+        {
+          "feature": "OnlineBackup_Yes",
+          "importance": 0.032,
+          "raw_score": 0.032
+        },
+        {
+          "feature": "PaymentMethod_Credit card (automatic)",
+          "importance": 0.0306,
+          "raw_score": 0.0306
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0281,
+          "raw_score": 0.0281
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0267,
+          "raw_score": 0.0267
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0267,
+          "raw_score": 0.0267
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0262,
+          "raw_score": 0.0262
+        }
+      ],
+      "mlflow_run_id": "97e2ec83c6ea4694a4e4e2b580094a90",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858242": {
+      "version": "logistic_regression-v1794858242",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858242\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.75,
+        "val_f1": 0.6,
+        "val_roc_auc": 0.8571,
+        "val_pr_auc": 0.6244,
+        "val_brier_score": 0.1479,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 1,
+        "val_true_positives": 3,
+        "val_estimated_net_benefit_usd": 3780.0,
+        "test_accuracy": 0.7222,
+        "test_precision": 0.25,
+        "test_recall": 0.3333,
+        "test_f1": 0.2857,
+        "test_roc_auc": 0.6222,
+        "test_pr_auc": 0.215,
+        "test_brier_score": 0.2011,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 2,
+        "test_true_positives": 1,
+        "test_estimated_net_benefit_usd": 1020.0,
+        "training_duration_seconds": 0.2
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0721,
+          "raw_score": 0.8597
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0676,
+          "raw_score": 0.8058
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0447,
+          "raw_score": 0.5324
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0388,
+          "raw_score": 0.4624
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0366,
+          "raw_score": 0.4368
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0341,
+          "raw_score": 0.4069
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3827
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0314,
+          "raw_score": 0.3749
+        },
+        {
+          "feature": "PhoneService_Yes",
+          "importance": 0.0267,
+          "raw_score": 0.318
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "MultipleLines_No phone service",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0256,
+          "raw_score": 0.3056
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0256,
+          "raw_score": 0.3054
+        }
+      ],
+      "mlflow_run_id": "24cef1404a9e4f6ba6bc416e12415206",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858242": {
+      "version": "random_forest-v1794858242",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858242\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7222,
+        "val_precision": 0.4,
+        "val_recall": 0.5,
+        "val_f1": 0.4444,
+        "val_roc_auc": 0.8036,
+        "val_pr_auc": 0.406,
+        "val_brier_score": 0.1526,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2400.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.6444,
+        "test_pr_auc": 0.2025,
+        "test_brier_score": 0.1814,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 1.01
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1288,
+          "raw_score": 0.1288
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.1259,
+          "raw_score": 0.1259
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.1189,
+          "raw_score": 0.1189
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0899,
+          "raw_score": 0.0899
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0556,
+          "raw_score": 0.0556
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0535,
+          "raw_score": 0.0535
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0501,
+          "raw_score": 0.0501
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0437,
+          "raw_score": 0.0437
+        },
+        {
+          "feature": "PaymentMethod_Bank transfer (automatic)",
+          "importance": 0.0242,
+          "raw_score": 0.0242
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0219,
+          "raw_score": 0.0219
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0171,
+          "raw_score": 0.0171
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0144,
+          "raw_score": 0.0144
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0131,
+          "raw_score": 0.0131
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0124,
+          "raw_score": 0.0124
+        },
+        {
+          "feature": "MultipleLines_Yes",
+          "importance": 0.0119,
+          "raw_score": 0.0119
+        }
+      ],
+      "mlflow_run_id": "3b4756c2f14045a29ef1f665ea458e7a",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858242": {
+      "version": "xgboost-v1794858242",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858242\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.5,
+        "val_f1": 0.5,
+        "val_roc_auc": 0.8393,
+        "val_pr_auc": 0.5941,
+        "val_brier_score": 0.1429,
+        "val_true_negatives": 12,
+        "val_false_positives": 2,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2520.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.5778,
+        "test_pr_auc": 0.1763,
+        "test_brier_score": 0.2092,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.65
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 4.25,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1307,
+          "raw_score": 0.1307
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0825,
+          "raw_score": 0.0825
+        },
+        {
+          "feature": "SeniorCitizen_0",
+          "importance": 0.0549,
+          "raw_score": 0.0549
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.044,
+          "raw_score": 0.044
+        },
+        {
+          "feature": "SeniorCitizen_1",
+          "importance": 0.0383,
+          "raw_score": 0.0383
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0361,
+          "raw_score": 0.0361
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.032,
+          "raw_score": 0.032
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0319,
+          "raw_score": 0.0319
+        },
+        {
+          "feature": "PaymentMethod_Credit card (automatic)",
+          "importance": 0.0306,
+          "raw_score": 0.0306
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0293,
+          "raw_score": 0.0293
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0283,
+          "raw_score": 0.0283
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0272,
+          "raw_score": 0.0272
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0266,
+          "raw_score": 0.0266
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0264,
+          "raw_score": 0.0264
+        },
+        {
+          "feature": "OnlineBackup_Yes",
+          "importance": 0.0261,
+          "raw_score": 0.0261
+        }
+      ],
+      "mlflow_run_id": "a138258845e04656af464a2bdb461b22",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858249": {
+      "version": "logistic_regression-v1794858249",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858249\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7266,
+        "val_precision": 0.4912,
+        "val_recall": 0.7972,
+        "val_f1": 0.6079,
+        "val_roc_auc": 0.8366,
+        "val_pr_auc": 0.6624,
+        "val_brier_score": 0.1693,
+        "val_true_negatives": 544,
+        "val_false_positives": 232,
+        "val_false_negatives": 57,
+        "val_true_positives": 224,
+        "val_estimated_net_benefit_usd": 281280.0,
+        "test_accuracy": 0.7465,
+        "test_precision": 0.5142,
+        "test_recall": 0.8399,
+        "test_f1": 0.6378,
+        "test_roc_auc": 0.8629,
+        "test_pr_auc": 0.6814,
+        "test_brier_score": 0.1599,
+        "test_true_negatives": 553,
+        "test_false_positives": 223,
+        "test_false_negatives": 45,
+        "test_true_positives": 236,
+        "test_estimated_net_benefit_usd": 298920.0,
+        "training_duration_seconds": 0.38
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.089,
+          "raw_score": 0.8341
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0816,
+          "raw_score": 0.7643
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0719,
+          "raw_score": 0.6735
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0631,
+          "raw_score": 0.5908
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0401,
+          "raw_score": 0.3758
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3005
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0275,
+          "raw_score": 0.2573
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0268,
+          "raw_score": 0.2513
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0246,
+          "raw_score": 0.2303
+        },
+        {
+          "feature": "InternetService_No",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineSecurity_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineBackup_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "DeviceProtection_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        }
+      ],
+      "mlflow_run_id": "48d3fb97c76f42869b2cae21bb222535",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858249": {
+      "version": "random_forest-v1794858249",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858249\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7559,
+        "val_precision": 0.5277,
+        "val_recall": 0.7794,
+        "val_f1": 0.6293,
+        "val_roc_auc": 0.8358,
+        "val_pr_auc": 0.651,
+        "val_brier_score": 0.1639,
+        "val_true_negatives": 580,
+        "val_false_positives": 196,
+        "val_false_negatives": 62,
+        "val_true_positives": 219,
+        "val_estimated_net_benefit_usd": 278700.0,
+        "test_accuracy": 0.7588,
+        "test_precision": 0.5308,
+        "test_recall": 0.7972,
+        "test_f1": 0.6373,
+        "test_roc_auc": 0.8484,
+        "test_pr_auc": 0.6484,
+        "test_brier_score": 0.1592,
+        "test_true_negatives": 578,
+        "test_false_positives": 198,
+        "test_false_negatives": 57,
+        "test_true_positives": 224,
+        "test_estimated_net_benefit_usd": 285360.0,
+        "training_duration_seconds": 1.26
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.1347,
+          "raw_score": 0.1347
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0781,
+          "raw_score": 0.0781
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0728,
+          "raw_score": 0.0728
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0686,
+          "raw_score": 0.0686
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0591,
+          "raw_score": 0.0591
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0589,
+          "raw_score": 0.0589
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0579,
+          "raw_score": 0.0579
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0571,
+          "raw_score": 0.0571
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0479,
+          "raw_score": 0.0479
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0474,
+          "raw_score": 0.0474
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0298,
+          "raw_score": 0.0298
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0254,
+          "raw_score": 0.0254
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.0217,
+          "raw_score": 0.0217
+        },
+        {
+          "feature": "OnlineBackup_No",
+          "importance": 0.0143,
+          "raw_score": 0.0143
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0137,
+          "raw_score": 0.0137
+        }
+      ],
+      "mlflow_run_id": "e2c2c1134f78481e8c27b0644dba5176",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858249": {
+      "version": "xgboost-v1794858249",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858249\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7398,
+        "val_precision": 0.507,
+        "val_recall": 0.7722,
+        "val_f1": 0.6121,
+        "val_roc_auc": 0.8361,
+        "val_pr_auc": 0.6553,
+        "val_brier_score": 0.1646,
+        "val_true_negatives": 565,
+        "val_false_positives": 211,
+        "val_false_negatives": 64,
+        "val_true_positives": 217,
+        "val_estimated_net_benefit_usd": 274140.0,
+        "test_accuracy": 0.7493,
+        "test_precision": 0.5183,
+        "test_recall": 0.8078,
+        "test_f1": 0.6314,
+        "test_roc_auc": 0.8534,
+        "test_pr_auc": 0.6535,
+        "test_brier_score": 0.1586,
+        "test_true_negatives": 565,
+        "test_false_positives": 211,
+        "test_false_negatives": 54,
+        "test_true_positives": 227,
+        "test_estimated_net_benefit_usd": 287940.0,
+        "training_duration_seconds": 0.89
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 2.77,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.2768,
+          "raw_score": 0.2768
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.2329,
+          "raw_score": 0.2329
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0634,
+          "raw_score": 0.0634
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0606,
+          "raw_score": 0.0606
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0308,
+          "raw_score": 0.0308
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.024,
+          "raw_score": 0.024
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.023,
+          "raw_score": 0.023
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0197,
+          "raw_score": 0.0197
+        },
+        {
+          "feature": "StreamingMovies_Yes",
+          "importance": 0.0135,
+          "raw_score": 0.0135
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.013,
+          "raw_score": 0.013
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0112,
+          "raw_score": 0.0112
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0105,
+          "raw_score": 0.0105
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0098,
+          "raw_score": 0.0098
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0097,
+          "raw_score": 0.0097
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0096,
+          "raw_score": 0.0096
+        }
+      ],
+      "mlflow_run_id": "69015c7833c74593b0e25edc7e98b7ad",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858311": {
+      "version": "logistic_regression-v1794858311",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858311\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.75,
+        "val_f1": 0.6,
+        "val_roc_auc": 0.8571,
+        "val_pr_auc": 0.6244,
+        "val_brier_score": 0.1479,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 1,
+        "val_true_positives": 3,
+        "val_estimated_net_benefit_usd": 3780.0,
+        "test_accuracy": 0.7222,
+        "test_precision": 0.25,
+        "test_recall": 0.3333,
+        "test_f1": 0.2857,
+        "test_roc_auc": 0.6222,
+        "test_pr_auc": 0.215,
+        "test_brier_score": 0.2011,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 2,
+        "test_true_positives": 1,
+        "test_estimated_net_benefit_usd": 1020.0,
+        "training_duration_seconds": 0.15
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0721,
+          "raw_score": 0.8597
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0676,
+          "raw_score": 0.8058
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0447,
+          "raw_score": 0.5324
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0388,
+          "raw_score": 0.4624
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0366,
+          "raw_score": 0.4368
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0341,
+          "raw_score": 0.4069
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3827
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0314,
+          "raw_score": 0.3749
+        },
+        {
+          "feature": "PhoneService_Yes",
+          "importance": 0.0267,
+          "raw_score": 0.318
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "MultipleLines_No phone service",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0256,
+          "raw_score": 0.3056
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0256,
+          "raw_score": 0.3054
+        }
+      ],
+      "mlflow_run_id": "e1b8972875b747f2ada7576d24ecdee0",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858311": {
+      "version": "random_forest-v1794858311",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858311\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7222,
+        "val_precision": 0.4,
+        "val_recall": 0.5,
+        "val_f1": 0.4444,
+        "val_roc_auc": 0.8036,
+        "val_pr_auc": 0.406,
+        "val_brier_score": 0.1526,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2400.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.6444,
+        "test_pr_auc": 0.2025,
+        "test_brier_score": 0.1814,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.78
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1288,
+          "raw_score": 0.1288
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.1259,
+          "raw_score": 0.1259
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.1189,
+          "raw_score": 0.1189
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0899,
+          "raw_score": 0.0899
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0556,
+          "raw_score": 0.0556
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0535,
+          "raw_score": 0.0535
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0501,
+          "raw_score": 0.0501
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0437,
+          "raw_score": 0.0437
+        },
+        {
+          "feature": "PaymentMethod_Bank transfer (automatic)",
+          "importance": 0.0242,
+          "raw_score": 0.0242
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0219,
+          "raw_score": 0.0219
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0171,
+          "raw_score": 0.0171
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0144,
+          "raw_score": 0.0144
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0131,
+          "raw_score": 0.0131
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0124,
+          "raw_score": 0.0124
+        },
+        {
+          "feature": "MultipleLines_Yes",
+          "importance": 0.0119,
+          "raw_score": 0.0119
+        }
+      ],
+      "mlflow_run_id": "2ef694c50617400eb7fe09a66589fc57",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858311": {
+      "version": "xgboost-v1794858311",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858311\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.5,
+        "val_f1": 0.5,
+        "val_roc_auc": 0.8393,
+        "val_pr_auc": 0.5941,
+        "val_brier_score": 0.1429,
+        "val_true_negatives": 12,
+        "val_false_positives": 2,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2520.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.5778,
+        "test_pr_auc": 0.1763,
+        "test_brier_score": 0.2092,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.41
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 4.25,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1307,
+          "raw_score": 0.1307
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0825,
+          "raw_score": 0.0825
+        },
+        {
+          "feature": "SeniorCitizen_0",
+          "importance": 0.0549,
+          "raw_score": 0.0549
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.044,
+          "raw_score": 0.044
+        },
+        {
+          "feature": "SeniorCitizen_1",
+          "importance": 0.0383,
+          "raw_score": 0.0383
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0361,
+          "raw_score": 0.0361
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.032,
+          "raw_score": 0.032
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0319,
+          "raw_score": 0.0319
+        },
+        {
+          "feature": "PaymentMethod_Credit card (automatic)",
+          "importance": 0.0306,
+          "raw_score": 0.0306
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0293,
+          "raw_score": 0.0293
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0283,
+          "raw_score": 0.0283
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0272,
+          "raw_score": 0.0272
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0266,
+          "raw_score": 0.0266
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0264,
+          "raw_score": 0.0264
+        },
+        {
+          "feature": "OnlineBackup_Yes",
+          "importance": 0.0261,
+          "raw_score": 0.0261
+        }
+      ],
+      "mlflow_run_id": "e91f3fe828df4ab69b7b7696a83e5546",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858314": {
+      "version": "logistic_regression-v1794858314",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858314\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7266,
+        "val_precision": 0.4912,
+        "val_recall": 0.7972,
+        "val_f1": 0.6079,
+        "val_roc_auc": 0.8366,
+        "val_pr_auc": 0.6624,
+        "val_brier_score": 0.1693,
+        "val_true_negatives": 544,
+        "val_false_positives": 232,
+        "val_false_negatives": 57,
+        "val_true_positives": 224,
+        "val_estimated_net_benefit_usd": 281280.0,
+        "test_accuracy": 0.7465,
+        "test_precision": 0.5142,
+        "test_recall": 0.8399,
+        "test_f1": 0.6378,
+        "test_roc_auc": 0.8629,
+        "test_pr_auc": 0.6814,
+        "test_brier_score": 0.1599,
+        "test_true_negatives": 553,
+        "test_false_positives": 223,
+        "test_false_negatives": 45,
+        "test_true_positives": 236,
+        "test_estimated_net_benefit_usd": 298920.0,
+        "training_duration_seconds": 0.29
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.089,
+          "raw_score": 0.8341
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0816,
+          "raw_score": 0.7643
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0719,
+          "raw_score": 0.6735
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0631,
+          "raw_score": 0.5908
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0401,
+          "raw_score": 0.3758
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3005
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0275,
+          "raw_score": 0.2573
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0268,
+          "raw_score": 0.2513
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0246,
+          "raw_score": 0.2303
+        },
+        {
+          "feature": "InternetService_No",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineSecurity_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineBackup_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "DeviceProtection_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        }
+      ],
+      "mlflow_run_id": "38c99cb20c3b42779c2d44bb80265910",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858314": {
+      "version": "random_forest-v1794858314",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858314\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7559,
+        "val_precision": 0.5277,
+        "val_recall": 0.7794,
+        "val_f1": 0.6293,
+        "val_roc_auc": 0.8358,
+        "val_pr_auc": 0.651,
+        "val_brier_score": 0.1639,
+        "val_true_negatives": 580,
+        "val_false_positives": 196,
+        "val_false_negatives": 62,
+        "val_true_positives": 219,
+        "val_estimated_net_benefit_usd": 278700.0,
+        "test_accuracy": 0.7588,
+        "test_precision": 0.5308,
+        "test_recall": 0.7972,
+        "test_f1": 0.6373,
+        "test_roc_auc": 0.8484,
+        "test_pr_auc": 0.6484,
+        "test_brier_score": 0.1592,
+        "test_true_negatives": 578,
+        "test_false_positives": 198,
+        "test_false_negatives": 57,
+        "test_true_positives": 224,
+        "test_estimated_net_benefit_usd": 285360.0,
+        "training_duration_seconds": 0.76
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.1347,
+          "raw_score": 0.1347
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0781,
+          "raw_score": 0.0781
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0728,
+          "raw_score": 0.0728
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0686,
+          "raw_score": 0.0686
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0591,
+          "raw_score": 0.0591
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0589,
+          "raw_score": 0.0589
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0579,
+          "raw_score": 0.0579
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0571,
+          "raw_score": 0.0571
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0479,
+          "raw_score": 0.0479
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0474,
+          "raw_score": 0.0474
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0298,
+          "raw_score": 0.0298
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0254,
+          "raw_score": 0.0254
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.0217,
+          "raw_score": 0.0217
+        },
+        {
+          "feature": "OnlineBackup_No",
+          "importance": 0.0143,
+          "raw_score": 0.0143
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0137,
+          "raw_score": 0.0137
+        }
+      ],
+      "mlflow_run_id": "36018303bd11471cbd136f56baa20252",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858314": {
+      "version": "xgboost-v1794858314",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858314\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7398,
+        "val_precision": 0.507,
+        "val_recall": 0.7722,
+        "val_f1": 0.6121,
+        "val_roc_auc": 0.8361,
+        "val_pr_auc": 0.6553,
+        "val_brier_score": 0.1646,
+        "val_true_negatives": 565,
+        "val_false_positives": 211,
+        "val_false_negatives": 64,
+        "val_true_positives": 217,
+        "val_estimated_net_benefit_usd": 274140.0,
+        "test_accuracy": 0.7493,
+        "test_precision": 0.5183,
+        "test_recall": 0.8078,
+        "test_f1": 0.6314,
+        "test_roc_auc": 0.8534,
+        "test_pr_auc": 0.6535,
+        "test_brier_score": 0.1586,
+        "test_true_negatives": 565,
+        "test_false_positives": 211,
+        "test_false_negatives": 54,
+        "test_true_positives": 227,
+        "test_estimated_net_benefit_usd": 287940.0,
+        "training_duration_seconds": 0.95
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 2.77,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.2768,
+          "raw_score": 0.2768
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.2329,
+          "raw_score": 0.2329
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0634,
+          "raw_score": 0.0634
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0606,
+          "raw_score": 0.0606
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0308,
+          "raw_score": 0.0308
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.024,
+          "raw_score": 0.024
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.023,
+          "raw_score": 0.023
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0197,
+          "raw_score": 0.0197
+        },
+        {
+          "feature": "StreamingMovies_Yes",
+          "importance": 0.0135,
+          "raw_score": 0.0135
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.013,
+          "raw_score": 0.013
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0112,
+          "raw_score": 0.0112
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0105,
+          "raw_score": 0.0105
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0098,
+          "raw_score": 0.0098
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0097,
+          "raw_score": 0.0097
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0096,
+          "raw_score": 0.0096
+        }
+      ],
+      "mlflow_run_id": "c9ac73ce89594f13af395abc1e020a46",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858903": {
+      "version": "logistic_regression-v1794858903",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858903\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.75,
+        "val_f1": 0.6,
+        "val_roc_auc": 0.8571,
+        "val_pr_auc": 0.6244,
+        "val_brier_score": 0.1479,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 1,
+        "val_true_positives": 3,
+        "val_estimated_net_benefit_usd": 3780.0,
+        "test_accuracy": 0.7222,
+        "test_precision": 0.25,
+        "test_recall": 0.3333,
+        "test_f1": 0.2857,
+        "test_roc_auc": 0.6222,
+        "test_pr_auc": 0.215,
+        "test_brier_score": 0.2011,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 2,
+        "test_true_positives": 1,
+        "test_estimated_net_benefit_usd": 1020.0,
+        "training_duration_seconds": 0.11
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0721,
+          "raw_score": 0.8597
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0676,
+          "raw_score": 0.8058
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0457,
+          "raw_score": 0.5445
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0447,
+          "raw_score": 0.5324
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0388,
+          "raw_score": 0.4624
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0366,
+          "raw_score": 0.4368
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0341,
+          "raw_score": 0.4069
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3827
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0314,
+          "raw_score": 0.3749
+        },
+        {
+          "feature": "PhoneService_Yes",
+          "importance": 0.0267,
+          "raw_score": 0.318
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "MultipleLines_No phone service",
+          "importance": 0.0267,
+          "raw_score": 0.3179
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0256,
+          "raw_score": 0.3056
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0256,
+          "raw_score": 0.3054
+        }
+      ],
+      "mlflow_run_id": "3893d1b43d034249833d5dc7c6648dc6",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858903": {
+      "version": "random_forest-v1794858903",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858903\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7222,
+        "val_precision": 0.4,
+        "val_recall": 0.5,
+        "val_f1": 0.4444,
+        "val_roc_auc": 0.8036,
+        "val_pr_auc": 0.406,
+        "val_brier_score": 0.1526,
+        "val_true_negatives": 11,
+        "val_false_positives": 3,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2400.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.6444,
+        "test_pr_auc": 0.2025,
+        "test_brier_score": 0.1814,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.51
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1288,
+          "raw_score": 0.1288
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.1259,
+          "raw_score": 0.1259
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.1189,
+          "raw_score": 0.1189
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0899,
+          "raw_score": 0.0899
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.0556,
+          "raw_score": 0.0556
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0535,
+          "raw_score": 0.0535
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0501,
+          "raw_score": 0.0501
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0437,
+          "raw_score": 0.0437
+        },
+        {
+          "feature": "PaymentMethod_Bank transfer (automatic)",
+          "importance": 0.0242,
+          "raw_score": 0.0242
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0219,
+          "raw_score": 0.0219
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0171,
+          "raw_score": 0.0171
+        },
+        {
+          "feature": "MultipleLines_No",
+          "importance": 0.0144,
+          "raw_score": 0.0144
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0131,
+          "raw_score": 0.0131
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0124,
+          "raw_score": 0.0124
+        },
+        {
+          "feature": "MultipleLines_Yes",
+          "importance": 0.0119,
+          "raw_score": 0.0119
+        }
+      ],
+      "mlflow_run_id": "fcd2bfef6c98414385d23f377c2dc4c7",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858903": {
+      "version": "xgboost-v1794858903",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858903\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7778,
+        "val_precision": 0.5,
+        "val_recall": 0.5,
+        "val_f1": 0.5,
+        "val_roc_auc": 0.8393,
+        "val_pr_auc": 0.5941,
+        "val_brier_score": 0.1429,
+        "val_true_negatives": 12,
+        "val_false_positives": 2,
+        "val_false_negatives": 2,
+        "val_true_positives": 2,
+        "val_estimated_net_benefit_usd": 2520.0,
+        "test_accuracy": 0.6667,
+        "test_precision": 0.0,
+        "test_recall": 0.0,
+        "test_f1": 0.0,
+        "test_roc_auc": 0.5778,
+        "test_pr_auc": 0.1763,
+        "test_brier_score": 0.2092,
+        "test_true_negatives": 12,
+        "test_false_positives": 3,
+        "test_false_negatives": 3,
+        "test_true_positives": 0,
+        "test_estimated_net_benefit_usd": -360.0,
+        "training_duration_seconds": 0.4
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 4.25,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "tenure_years",
+          "importance": 0.1307,
+          "raw_score": 0.1307
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0825,
+          "raw_score": 0.0825
+        },
+        {
+          "feature": "SeniorCitizen_0",
+          "importance": 0.0549,
+          "raw_score": 0.0549
+        },
+        {
+          "feature": "PaymentMethod_Mailed check",
+          "importance": 0.044,
+          "raw_score": 0.044
+        },
+        {
+          "feature": "SeniorCitizen_1",
+          "importance": 0.0383,
+          "raw_score": 0.0383
+        },
+        {
+          "feature": "Dependents_No",
+          "importance": 0.0361,
+          "raw_score": 0.0361
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.032,
+          "raw_score": 0.032
+        },
+        {
+          "feature": "Dependents_Yes",
+          "importance": 0.0319,
+          "raw_score": 0.0319
+        },
+        {
+          "feature": "PaymentMethod_Credit card (automatic)",
+          "importance": 0.0306,
+          "raw_score": 0.0306
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0293,
+          "raw_score": 0.0293
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0283,
+          "raw_score": 0.0283
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0272,
+          "raw_score": 0.0272
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0266,
+          "raw_score": 0.0266
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0264,
+          "raw_score": 0.0264
+        },
+        {
+          "feature": "OnlineBackup_Yes",
+          "importance": 0.0261,
+          "raw_score": 0.0261
+        }
+      ],
+      "mlflow_run_id": "7427e570af3b41faab6145799766315d",
+      "dataset_fingerprint": "00a7437b2866e17d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "logistic_regression-v1794858906": {
+      "version": "logistic_regression-v1794858906",
+      "model_name": "Logistic_Regression",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\logistic_regression-v1794858906\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7266,
+        "val_precision": 0.4912,
+        "val_recall": 0.7972,
+        "val_f1": 0.6079,
+        "val_roc_auc": 0.8366,
+        "val_pr_auc": 0.6624,
+        "val_brier_score": 0.1693,
+        "val_true_negatives": 544,
+        "val_false_positives": 232,
+        "val_false_negatives": 57,
+        "val_true_positives": 224,
+        "val_estimated_net_benefit_usd": 281280.0,
+        "test_accuracy": 0.7465,
+        "test_precision": 0.5142,
+        "test_recall": 0.8399,
+        "test_f1": 0.6378,
+        "test_roc_auc": 0.8629,
+        "test_pr_auc": 0.6814,
+        "test_brier_score": 0.1599,
+        "test_true_negatives": 553,
+        "test_false_positives": 223,
+        "test_false_negatives": 45,
+        "test_true_positives": 236,
+        "test_estimated_net_benefit_usd": 298920.0,
+        "training_duration_seconds": 0.27
+      },
+      "params": {
+        "max_iter": 1000,
+        "C": 0.5,
+        "class_weight": "balanced",
+        "penalty": "l2"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.089,
+          "raw_score": 0.8341
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.0816,
+          "raw_score": 0.7643
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0719,
+          "raw_score": 0.6735
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0631,
+          "raw_score": 0.5908
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0401,
+          "raw_score": 0.3758
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0321,
+          "raw_score": 0.3005
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0275,
+          "raw_score": 0.2573
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0268,
+          "raw_score": 0.2513
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0252,
+          "raw_score": 0.2365
+        },
+        {
+          "feature": "PaperlessBilling_No",
+          "importance": 0.0246,
+          "raw_score": 0.2303
+        },
+        {
+          "feature": "InternetService_No",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineSecurity_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "OnlineBackup_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        },
+        {
+          "feature": "DeviceProtection_No internet service",
+          "importance": 0.0221,
+          "raw_score": 0.2071
+        }
+      ],
+      "mlflow_run_id": "3a38911586724e3eb8db5462df773880",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": true,
+      "status": "REGISTERED"
+    },
+    "random_forest-v1794858906": {
+      "version": "random_forest-v1794858906",
+      "model_name": "Random_Forest",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\random_forest-v1794858906\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7559,
+        "val_precision": 0.5277,
+        "val_recall": 0.7794,
+        "val_f1": 0.6293,
+        "val_roc_auc": 0.8358,
+        "val_pr_auc": 0.651,
+        "val_brier_score": 0.1639,
+        "val_true_negatives": 580,
+        "val_false_positives": 196,
+        "val_false_negatives": 62,
+        "val_true_positives": 219,
+        "val_estimated_net_benefit_usd": 278700.0,
+        "test_accuracy": 0.7588,
+        "test_precision": 0.5308,
+        "test_recall": 0.7972,
+        "test_f1": 0.6373,
+        "test_roc_auc": 0.8484,
+        "test_pr_auc": 0.6484,
+        "test_brier_score": 0.1592,
+        "test_true_negatives": 578,
+        "test_false_positives": 198,
+        "test_false_negatives": 57,
+        "test_true_positives": 224,
+        "test_estimated_net_benefit_usd": 285360.0,
+        "training_duration_seconds": 1.06
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 8,
+        "min_samples_split": 4,
+        "class_weight": "balanced"
+      },
+      "feature_importance": [
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.1347,
+          "raw_score": 0.1347
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0781,
+          "raw_score": 0.0781
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0728,
+          "raw_score": 0.0728
+        },
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.0686,
+          "raw_score": 0.0686
+        },
+        {
+          "feature": "TotalCharges",
+          "importance": 0.0591,
+          "raw_score": 0.0591
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0589,
+          "raw_score": 0.0589
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0579,
+          "raw_score": 0.0579
+        },
+        {
+          "feature": "tenure_years",
+          "importance": 0.0571,
+          "raw_score": 0.0571
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.0479,
+          "raw_score": 0.0479
+        },
+        {
+          "feature": "MonthlyCharges",
+          "importance": 0.0474,
+          "raw_score": 0.0474
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0298,
+          "raw_score": 0.0298
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.0254,
+          "raw_score": 0.0254
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.0217,
+          "raw_score": 0.0217
+        },
+        {
+          "feature": "OnlineBackup_No",
+          "importance": 0.0143,
+          "raw_score": 0.0143
+        },
+        {
+          "feature": "total_services_subscribed",
+          "importance": 0.0137,
+          "raw_score": 0.0137
+        }
+      ],
+      "mlflow_run_id": "d7063131f71b48c19cabb70cd8be1919",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    },
+    "xgboost-v1794858906": {
+      "version": "xgboost-v1794858906",
+      "model_name": "XGBoost",
+      "artifact_path": "C:\\Users\\pavan\\AiProjects\\Project-03\\models_store\\xgboost-v1794858906\\pipeline.joblib",
+      "metrics": {
+        "val_accuracy": 0.7398,
+        "val_precision": 0.507,
+        "val_recall": 0.7722,
+        "val_f1": 0.6121,
+        "val_roc_auc": 0.8361,
+        "val_pr_auc": 0.6553,
+        "val_brier_score": 0.1646,
+        "val_true_negatives": 565,
+        "val_false_positives": 211,
+        "val_false_negatives": 64,
+        "val_true_positives": 217,
+        "val_estimated_net_benefit_usd": 274140.0,
+        "test_accuracy": 0.7493,
+        "test_precision": 0.5183,
+        "test_recall": 0.8078,
+        "test_f1": 0.6314,
+        "test_roc_auc": 0.8534,
+        "test_pr_auc": 0.6535,
+        "test_brier_score": 0.1586,
+        "test_true_negatives": 565,
+        "test_false_positives": 211,
+        "test_false_negatives": 54,
+        "test_true_positives": 227,
+        "test_estimated_net_benefit_usd": 287940.0,
+        "training_duration_seconds": 0.59
+      },
+      "params": {
+        "n_estimators": 150,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "scale_pos_weight": 2.77,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "feature_importance": [
+        {
+          "feature": "is_high_risk_combo_Yes",
+          "importance": 0.2768,
+          "raw_score": 0.2768
+        },
+        {
+          "feature": "Contract_Month-to-month",
+          "importance": 0.2329,
+          "raw_score": 0.2329
+        },
+        {
+          "feature": "is_high_risk_combo_No",
+          "importance": 0.0634,
+          "raw_score": 0.0634
+        },
+        {
+          "feature": "InternetService_Fiber optic",
+          "importance": 0.0606,
+          "raw_score": 0.0606
+        },
+        {
+          "feature": "OnlineSecurity_No",
+          "importance": 0.0308,
+          "raw_score": 0.0308
+        },
+        {
+          "feature": "TechSupport_No",
+          "importance": 0.024,
+          "raw_score": 0.024
+        },
+        {
+          "feature": "Contract_Two year",
+          "importance": 0.023,
+          "raw_score": 0.023
+        },
+        {
+          "feature": "InternetService_DSL",
+          "importance": 0.0197,
+          "raw_score": 0.0197
+        },
+        {
+          "feature": "StreamingMovies_Yes",
+          "importance": 0.0135,
+          "raw_score": 0.0135
+        },
+        {
+          "feature": "PaymentMethod_Electronic check",
+          "importance": 0.013,
+          "raw_score": 0.013
+        },
+        {
+          "feature": "Contract_One year",
+          "importance": 0.0112,
+          "raw_score": 0.0112
+        },
+        {
+          "feature": "tenure",
+          "importance": 0.0105,
+          "raw_score": 0.0105
+        },
+        {
+          "feature": "StreamingTV_Yes",
+          "importance": 0.0098,
+          "raw_score": 0.0098
+        },
+        {
+          "feature": "monthly_to_total_ratio",
+          "importance": 0.0097,
+          "raw_score": 0.0097
+        },
+        {
+          "feature": "PhoneService_No",
+          "importance": 0.0096,
+          "raw_score": 0.0096
+        }
+      ],
+      "mlflow_run_id": "7a89e50ede9e4f0f862da530c664c508",
+      "dataset_fingerprint": "395212c578e42d9d",
+      "is_champion": false,
+      "status": "REGISTERED"
+    }
+  },
+  "promotion_history": [
+    {
+      "version": "logistic_regression-v1794858045",
+      "promoted_at": "initial",
+      "reason": "Initial model deployment",
+      "previous_version": null
+    },
+    {
+      "version": "xgboost-v1794858045",
+      "promoted_at": "2026-11-16T19:40:49.931170+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8378) and F1 (0.6266)",
+      "previous_version": "logistic_regression-v1794858045"
+    },
+    {
+      "version": "logistic_regression-v1794858181",
+      "promoted_at": "2026-11-16T19:43:05.143480+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8571) and F1 (0.6000)",
+      "previous_version": "xgboost-v1794858045"
+    },
+    {
+      "version": "logistic_regression-v1794858242",
+      "promoted_at": "2026-11-16T19:44:05.204381+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8571) and F1 (0.6000)",
+      "previous_version": "logistic_regression-v1794858181"
+    },
+    {
+      "version": "logistic_regression-v1794858249",
+      "promoted_at": "2026-11-16T19:44:13.028760+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8366) and F1 (0.6079)",
+      "previous_version": "logistic_regression-v1794858242"
+    },
+    {
+      "version": "logistic_regression-v1794858242",
+      "promoted_at": "2026-11-16T19:44:13.061628+00:00",
+      "reason": "Preserved previous champion after challenger rejection",
+      "previous_version": "logistic_regression-v1794858249"
+    },
+    {
+      "version": "logistic_regression-v1794858249",
+      "promoted_at": "2026-11-16T19:44:13.106050+00:00",
+      "reason": "Rollback from logistic_regression-v1794858242",
+      "previous_version": "logistic_regression-v1794858242"
+    },
+    {
+      "version": "logistic_regression-v1794858311",
+      "promoted_at": "2026-11-16T19:45:13.743536+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8571) and F1 (0.6000)",
+      "previous_version": "logistic_regression-v1794858249"
+    },
+    {
+      "version": "logistic_regression-v1794858314",
+      "promoted_at": "2026-11-16T19:45:17.328456+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8366) and F1 (0.6079)",
+      "previous_version": "logistic_regression-v1794858311"
+    },
+    {
+      "version": "logistic_regression-v1794858311",
+      "promoted_at": "2026-11-16T19:45:17.361906+00:00",
+      "reason": "Preserved previous champion after challenger rejection",
+      "previous_version": "logistic_regression-v1794858314"
+    },
+    {
+      "version": "logistic_regression-v1794858314",
+      "promoted_at": "2026-11-16T19:45:17.400712+00:00",
+      "reason": "Rollback from logistic_regression-v1794858311",
+      "previous_version": "logistic_regression-v1794858311"
+    },
+    {
+      "version": "logistic_regression-v1794858903",
+      "promoted_at": "2026-11-16T19:55:05.764200+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8571) and F1 (0.6000)",
+      "previous_version": "logistic_regression-v1794858314"
+    },
+    {
+      "version": "logistic_regression-v1794858906",
+      "promoted_at": "2026-11-16T19:55:09.169164+00:00",
+      "reason": "Selected as initial champion with highest val ROC-AUC (0.8366) and F1 (0.6079)",
+      "previous_version": "logistic_regression-v1794858903"
+    },
+    {
+      "version": "logistic_regression-v1794858903",
+      "promoted_at": "2026-11-16T19:55:09.195624+00:00",
+      "reason": "Preserved previous champion after challenger rejection",
+      "previous_version": "logistic_regression-v1794858906"
+    },
+    {
+      "version": "logistic_regression-v1794858906",
+      "promoted_at": "2026-11-16T19:55:09.229939+00:00",
+      "reason": "Rollback from logistic_regression-v1794858903",
+      "previous_version": "logistic_regression-v1794858903"
+    }
+  ]
+}
